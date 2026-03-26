@@ -4,4 +4,5 @@ export * from './IconButton';
 export * from './Filters';
 export * from './BellIcon';
 export * from './Profile';
-export * from './GalleryImage';
+export * from './SingleMMimg';
+export * from './GalleryCard';

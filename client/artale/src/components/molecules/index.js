@@ -2,4 +2,5 @@ export * from './MenuList';
 export * from './SearchBox';
 export * from './GlassCard';
 export * from './SectionTitleBox';
-export * from './GalleryImgCollection';
+export * from './MMimgCollection';
+export * from './GalleryCollection';
