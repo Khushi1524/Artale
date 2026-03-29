@@ -2,6 +2,7 @@ import React from "react";
 import { SearchBox } from "../molecules";
 import { Avatar, IconButton } from "../atoms";
 import { FaRegBell } from "react-icons/fa";
+import { FaPenToSquare } from "react-icons/fa6";
 
 export const Header = () => {
   return (
@@ -9,6 +10,7 @@ export const Header = () => {
       <div className="flex items-center justify-between gap-10 py-3 max-w-300 mx-auto px-18">
         <SearchBox />
         <div className="flex items-center gap-4">
+          <IconButton icon={<FaPenToSquare />} varient={"circle"}/>
           <IconButton icon={<FaRegBell/>} varient={"circle"}/>
           <Avatar /> 
         </div>

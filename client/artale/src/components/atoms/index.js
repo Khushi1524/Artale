@@ -5,3 +5,4 @@ export * from './Avatar';
 export * from './Poster';
 export * from './Chip';
 export * from './Avatar'
+export * from './ModeBox'

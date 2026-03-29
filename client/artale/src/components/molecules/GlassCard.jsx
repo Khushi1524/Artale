@@ -7,7 +7,7 @@ export const GlassCard = () => {
       <Typography varient={"p"} className="text-white">Story of the day</Typography>
 
       <Typography varient={"h2"} className="text-white font-bold">The Whispering Life</Typography>
-      <Typography varient={"p"} className="line-clamp-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius, itaque similique aliquam quae voluptatum. Quaerat tempore ducimus esse dolor.Quaerat tempore ducimus esse dolor.rat tempore ducimus esse dolor. .Quaerat temp ucimus esse dolor.</Typography>
+      <Typography varient={"p"} className="line-clamp-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius, itaque similique aliquam quae voluptatum. Quaerat tempore ducimus esse dolor.Quaerat tempore ducimus esse dolor.rat tempore ducimus esse dolor. .Quaerat temp ucimus esse dolor.</Typography>
       <div className="flex gap-5 items-center">
         <Button>Read Story</Button>
         <Typography varient={"p"} className="text-white">-by Khushi Tiwari</Typography>

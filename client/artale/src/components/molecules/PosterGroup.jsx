@@ -1,5 +1,6 @@
 import React from "react";
 import {Poster } from "../atoms";
+// import user from "../../assets/user.jpg";
 import MMimg1 from "../../assets/MMimg1.jpg";
 import MMimg2 from "../../assets/MMimg2.jpg";
 import MMimg3 from "../../assets/MMimg3.jpg";
@@ -15,8 +16,8 @@ import MMimg11 from "../../assets/MMimg11.jpg";
 export const PosterGroup = () => {
   return (
     <div className="columns-3 gap-4">
-      <Poster src={MMimg1} />
-      <Poster src={MMimg2} />
+      <Poster src={MMimg1} artistName={"Khushi Tiwari"} artTitle={"The Whispering Woods"} />
+      {/* <Poster src={MMimg2} />
       <Poster src={MMimg3} />
       <Poster src={MMimg4} />
       <Poster src={MMimg5} />
@@ -24,8 +25,8 @@ export const PosterGroup = () => {
       <Poster src={MMimg7} />
       <Poster src={MMimg8} />
       <Poster src={MMimg9} />
-       <Poster src={MMimg10} />
-       <Poster src={MMimg11} />
+      <Poster src={MMimg10} />
+      <Poster src={MMimg11} /> */}
     </div>
   );
 };
