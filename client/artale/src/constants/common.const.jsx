@@ -23,6 +23,9 @@ export  const menuListArr = [
       id: 3,
       icon: <BsCollectionFill />,
       label: "Galleries",
+      onClick: ()=>{
+        alert('bnvn')
+      }
     },
 
     {

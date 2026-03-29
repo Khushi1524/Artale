@@ -1,26 +1,48 @@
 import React from "react";
-import { Sidebar } from "./components/templates/Sidebar";
-import { Hero } from "./components/organisms/Hero";
-import { Header } from "./components/templates";
-import { SectionHeader } from "./components/organisms/SectionHeader";
-import { GalleryCollection, MMimgCollection } from "./components/molecules";
-import { GalleryCard } from "./components/atoms/GalleryCard";
+import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Layout } from "./components/templates";
+import { Gallery, MoodMap } from "./components/pages";
 
 const App = () => {
-  return (
-    <>
-      <div className="flex">
-        <Sidebar />
-        <div className="relative left-32 w-[calc(100%-265px)] flex flex-col items-center py-8 px-8 gap-5 m-auto">
-          <Header/>
-          <Hero />
-          <SectionHeader/>
-           <MMimgCollection/>
-           <GalleryCollection/>
-        </div>
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <MoodMap />,
+      },
+        {
+        path: "/home",
+        element: <MoodMap />,
+      },
+      {
+        path: "/moodmap",
+        element: <MoodMap />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+      // {
+      //   path: "/keeps",
+      //   element: <Keeps />,
+      // },
+      // {
+      //   path: "/profile",
+      //   element: <Profile />,
+      // },
+      //   {
+      //   path: "/setting",
+      //   element: <Setting />,
+      // },
+    ],
+    errorElement: <Error />,
+  },
+]);
 
 export default App;
