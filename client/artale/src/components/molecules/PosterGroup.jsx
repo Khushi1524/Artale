@@ -1,32 +1,41 @@
 import React from "react";
-import {Poster } from "../atoms";
-// import user from "../../assets/user.jpg";
-import MMimg1 from "../../assets/MMimg1.jpg";
-import MMimg2 from "../../assets/MMimg2.jpg";
-import MMimg3 from "../../assets/MMimg3.jpg";
-import MMimg4 from "../../assets/MMimg4.jpg";
-import MMimg5 from "../../assets/MMimg5.jpg";
-import MMimg6 from "../../assets/MMimg6.jpg";
-import MMimg7 from "../../assets/MMimg7.jpg";
-import MMimg8 from "../../assets/MMimg8.jpg";
-import MMimg9 from "../../assets/MMimg9.jpg";
-import MMimg10 from "../../assets/MMimg10.jpg";
-import MMimg11 from "../../assets/MMimg11.jpg";
+import { Poster } from "../atoms";
+import { PosterData } from "../../constants";
 
-export const PosterGroup = () => {
+export const PosterGroup = ({ AllPosters }) => {
   return (
     <div className="columns-3 gap-4">
-      <Poster src={MMimg1} artistName={"Khushi Tiwari"} artTitle={"The Whispering Woods"} />
-      {/* <Poster src={MMimg2} />
-      <Poster src={MMimg3} />
-      <Poster src={MMimg4} />
-      <Poster src={MMimg5} />
-      <Poster src={MMimg6} />
-      <Poster src={MMimg7} />
-      <Poster src={MMimg8} />
-      <Poster src={MMimg9} />
-      <Poster src={MMimg10} />
-      <Poster src={MMimg11} /> */}
+      {AllPosters?.map((poster) => (
+        <Poster
+          key={poster.id}
+          posterImg={poster.posterImg}
+          artistProfileImg={poster.artistProfileImg}
+          artistName={poster.artistName}
+          artTitle={poster.artTitle}
+        />
+      ))}
+
+      {/* <Poster posterImg={MMimg1} artistProfileImg={user} artistName={"CH SK"} artTitle={"The demon princess"} artMood={"Calm"} />
+      <Poster posterImg={MMimg2} artistProfileImg={user} artistName={"CH SK"} artTitle={"The Abstract"}
+      artMood={"Heart"} />
+      <Poster posterImg={MMimg3} artistProfileImg={user} artistName={"CH SK"} artTitle={"The Tale"}
+      artMood={"calm"} />
+      <Poster posterImg={MMimg4} artistProfileImg={user} artistName={"CH SK"} artTitle={"Eve better"}
+      artMood={"calm"} />
+      <Poster posterImg={MMimg5} artistProfileImg={user} artistName={"CH SK"} artTitle={"Wall Art"}
+      artMood={"Dream"}/>
+      <Poster posterImg={MMimg6} artistProfileImg={user} artistName={"CH SK"} artTitle={"Dandillions"} 
+      artMood={"gloomy"}/>
+      <Poster posterImg={MMimg7} artistProfileImg={user} artistName={"CH SK"} artTitle={"Flamingo"} 
+      artMood={"reflect"}/>
+      <Poster posterImg={MMimg8} artistProfileImg={user} artistName={"CH SK"} artTitle={"Horse Boho"} 
+      artMood={"sunny"}/>
+      <Poster posterImg={MMimg9} artistProfileImg={user} artistName={"CH SK"} artTitle={"The Beauty"} 
+      artMood={"strom"}/>
+      <Poster posterImg={MMimg10} artistProfileImg={user} artistName={"CH SK"} artTitle={"Leamons wall"}
+      artMood={"sunny"}/>
+      <Poster posterImg={MMimg11} artistProfileImg={user} artistName={"CH SK"} artTitle={"Boho Ease"}
+      artMood={"Dream"}/> */}
     </div>
   );
 };
